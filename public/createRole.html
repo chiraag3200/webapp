@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Role </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+  </head>
+  <body>
+        <div>
+          <form
+            method="post"
+            action="/createRole"
+          >
+            <span>
+              ENTER THE PERMISSIONS GRANTED
+            </span>
+            <div
+              data-validate="Role is required"
+            >
+              <input
+                type="text"
+                name="role"
+                placeholder="Role"
+              />
+            </div>
+            <div
+              data-validate="createUser is required"
+            >
+              <input
+                type="text"
+                name="createUser"
+                placeholder="Create User"
+              />
+            </div>
+            <div
+              data-validate="blockUser is required"
+            >
+              <input
+                type="text"
+                name="blockUser"
+                placeholder="Block User"
+              />
+            </div>
+            <div
+              data-validate="updateProfile is required"
+            >
+              <input
+                type="text"
+                name="updateProfile"
+                placeholder="Update Profile"
+              />
+            </div>
+            </div>
+            <div
+              data-validate="updateOtherProfile is required"
+            >
+              <input
+                type="text"
+                name="updateOtherProfile"
+                placeholder="Update Other Profile"
+              />
+            </div>
+            <div
+              data-validate="viewUsers is required"
+            >
+              <input
+                type="text"
+                name="viewUsers"
+                placeholder="View Users"
+              />
+            </div>
+            <div
+              data-validate="createRole is required"
+            >
+              <input
+                type="text"
+                name="createRole"
+                placeholder="Create Role"
+              />
+            </div>
+            <div>
+              <button>
+                Create
+              </button>
+            </div>
+          </form>
+        </div>
+  </body>
+</html>
+
+

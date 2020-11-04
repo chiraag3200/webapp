@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>USERS LIST</title> 
+    <style type="text/css" media="screen"> 
+        body { 
+            text-decoration-color: white; 
+            font-size:2em;  
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    LIST OF ALL THE USERS
+      
+    <ul> 
+        <% data.forEach((item)=>{%> 
+        <li><%=item.firstName%> <%=item.lastName%></li>   <!-- display all users on the page -->
+        <%});%> 
+    </ul> 
+</body> 
+  
+</html> 

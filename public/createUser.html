@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create User </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+  </head>
+  <body>
+        <div>
+          <form
+            method="post"
+            action="/createUser"
+          >
+            <span>
+              ENTER DETAILS Of THE NEW USER
+            </span>
+            <div
+              data-validate="Username is required"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+              />
+            </div>
+            <div
+              data-validate="firstName is required"
+            >
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+              />
+            </div>
+            <div
+              data-validate="lastName is required"
+            >
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+              />
+            </div>
+            <div
+              data-validate="Password is required"
+            >
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <span ></span>
+              <span >
+                <i></i>
+              </span>
+            </div>
+            <div
+              data-validate="Role is required"
+            >
+              <input
+                type="role"
+                name="role"
+                placeholder="Role"
+              />
+            </div>
+            <div>
+              <button>
+                Create
+              </button>
+            </div>
+          </form>
+        </div>
+  </body>
+</html>
+
+

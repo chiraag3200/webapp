@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Update Profile </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+  </head>
+  <body>
+        <div>
+          <form
+            method="post"
+            action="/updateProfile"
+          >
+            <span>
+              ENTER UPDATED DETAILS
+            </span>
+            <div
+              data-validate="Username is required"
+            >
+              <input
+                type="text"
+                name="oldUsername"
+                placeholder="Old Username"
+              />
+            </div>
+            <div
+              data-validate="Username is required"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="New Username"
+              />
+            </div>
+            <div
+              data-validate="firstName is required"
+            >
+              <input
+                type="text"
+                name="firstName"
+                placeholder="New First Name"
+              />
+            </div>
+            <div
+              data-validate="lastName is required"
+            >
+              <input
+                type="text"
+                name="lastName"
+                placeholder="New Last Name"
+              />
+            </div>
+            <div>
+              <button>
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+  </body>
+</html>
+
+

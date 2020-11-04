@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+  </head>
+  <body>
+        <div>
+          <form
+            method="post"
+            action="/login"
+          >
+            <span>
+              ENTER DETAILS
+            </span>
+            <div
+              data-validate="Username is required"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+              />
+              <span ></span>
+              <span >
+                <i></i>
+              </span>
+            </div>
+            <div
+              data-validate="Password is required"
+            >
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <span ></span>
+              <span >
+                <i></i>
+              </span>
+            </div>
+
+            <div>
+              <button>
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+  </body>
+</html>
