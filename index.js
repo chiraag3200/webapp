@@ -48,13 +48,13 @@ MongoClient.connect(connectionUrl, {useNewUrlParser:true}, (error,client) => {
   // manager credentials are inserted initially to the database
   db.collection('users').findOne({username: 'manager'}, (error,user) => {
     if(!user){
-      var adminPassword=bcrypt.hashSync('admin@123', 8)
+      var managerPassword=bcrypt.hashSync('manager@123', 8)
       db.collection('users').insertOne({
       firstName: 'chiraag',
       lastName: 'mittal',
-      username: 'admin',
-      password: adminPassword,
-      role: 'admin',
+      username: 'manager',
+      password: managerPassword,
+      role: 'manager',
       isBlock: false
       })
     }
